@@ -207,3 +207,6 @@ $RECYCLE.BIN/
 
 # Windows shortcuts
 *.lnk
+
+# Others
+live.mp4
