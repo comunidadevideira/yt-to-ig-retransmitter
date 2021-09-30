@@ -7,6 +7,7 @@ import subprocess
 CHANNEL_ID="" # GET IT ON: https://www.youtube.com/account_advanced
 INSTAGRAM_USERNAME=""
 INSTAGRAM_PASSWORD=""
+SLEEP_TIME=5 # TIMEOUT AFTER TRY
 
 # DETECT IF CHANNEL IS LIVE
 cmd_check_is_live = 'streamlink https://www.youtube.com/channel/' + CHANNEL_ID + '/live'
@@ -54,3 +55,4 @@ while cmd_check_is_live_return == 0 : # LOOP UNTIL THERE'S SOMETHING LIVE
                     live.end_broadcast()  
     
                 live.end_broadcast()
+    time.sleep(SLEEP_TIME)
