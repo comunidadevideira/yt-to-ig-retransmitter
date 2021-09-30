@@ -12,7 +12,7 @@ INSTAGRAM_PASSWORD=""
 cmd_check_is_live = 'streamlink https://www.youtube.com/channel/' + CHANNEL_ID + '/live'
 cmd_check_is_live_return = os.system(cmd_check_is_live)
 
-if cmd_check_is_live_return == 0 :
+while cmd_check_is_live_return == 0 : # LOOP UNTIL THERE'S SOMETHING LIVE
     print("CHANNEL IS LIVE. STARTING RESTRAMING")
     
     # DOWNLOAD LIVE
