@@ -4,16 +4,16 @@ from ItsAGramLive import ItsAGramLive
 import subprocess
 
 # CONFIG 
-CHANNEL_ID="" # GET IT ON: https://www.youtube.com/account_advanced
-INSTAGRAM_USERNAME=""
-INSTAGRAM_PASSWORD=""
+CHANNEL_ID="UClv6OmLh9AfSEIUdXgWc5UQ" # GET IT ON: https://www.youtube.com/account_advanced
+INSTAGRAM_USERNAME="comunidadevideira"
+INSTAGRAM_PASSWORD="=videira12"
 SLEEP_TIME=5 # TIMEOUT AFTER TRY
 
 # DETECT IF CHANNEL IS LIVE
 cmd_check_is_live = 'streamlink https://www.youtube.com/channel/' + CHANNEL_ID + '/live'
-cmd_check_is_live_return = 0
+cmd_check_is_live_return = 1
 
-while cmd_check_is_live_return == 0 : # LOOP UNTIL THERE'S SOMETHING LIVE
+while cmd_check_is_live_return != 0 : # LOOP UNTIL THERE'S SOMETHING LIVE
 
     cmd_check_is_live_return = os.system(cmd_check_is_live)
 
