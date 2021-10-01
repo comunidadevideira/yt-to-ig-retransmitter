@@ -8,7 +8,7 @@ Watch for live streams on a YouTube channel and retransmit it to a Instagram pro
 | ------ | ------ |
 | ItsAGramLive | https://github.com/harrypython/itsagramlive |
 | Streamlink | https://github.com/streamlink/streamlink-twitch-gui |
-| FFmepeg | https://www.ffmpeg.org/ |
+| FFmpeg | https://www.ffmpeg.org/ |
 
 ### HOW TO USE
 
