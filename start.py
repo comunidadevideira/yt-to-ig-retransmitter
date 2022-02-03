@@ -43,7 +43,7 @@ while cmd_check_is_live_return != 0 : # LOOP UNTIL THERE'S SOMETHING LIVE
                 if live.start_broadcast():
                     # STREAM TO INSTAGRAM
                     ffmpeg_cmd = "ffmpeg " \
-                                "-re -nostdin -i '" + os.getcwd() + "/live.mp4' " \
+                                "-re -nostdin -i '" + os.path.join(os.getcwd(), "live.mp4") + "' " \
                                 "-vcodec libx264 -preset:v ultrafast " \
                                 "-acodec aac " \
                                 "-vf 'transpose=clock' " \
