@@ -4,9 +4,9 @@ from ItsAGramLive import ItsAGramLive
 import subprocess
 
 # CONFIG 
-CHANNEL_ID="UClv6OmLh9AfSEIUdXgWc5UQ" # GET IT ON: https://www.youtube.com/account_advanced
-INSTAGRAM_USERNAME="comunidadevideira"
-INSTAGRAM_PASSWORD="=videira12"
+CHANNEL_ID="" # GET IT ON: https://www.youtube.com/account_advanced
+INSTAGRAM_USERNAME=""
+INSTAGRAM_PASSWORD=""
 SLEEP_TIME=5 # TIMEOUT AFTER TRY
 
 # DETECT IF CHANNEL IS LIVE
